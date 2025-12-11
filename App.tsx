@@ -4,6 +4,7 @@ import AddressBar from './components/AddressBar';
 import EmailList from './components/EmailList';
 import EmailViewer from './components/EmailViewer';
 import CustomAddressModal from './components/CustomAddressModal';
+import SeoContent from './components/SeoContent'; // <--- YENİ EKLENDİ
 import Footer from './components/Footer';
 import { Mailbox, EmailSummary, EmailDetail } from './types';
 import { generateMailbox, createCustomMailbox, getMessages, getMessageDetail, deleteMessage } from './services/mailService';
@@ -258,6 +259,9 @@ const App: React.FC = () => {
           </div>
         </div>
       </main>
+
+      {/* SEO İçerik Alanı - Yeni Eklendi */}
+      <SeoContent />
       
       <Footer />
     </div>
